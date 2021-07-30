@@ -44,7 +44,7 @@ function scanNode(as, msg) {
 
 	var msg4 = msg.cloneRequest();
 	msg4.getRequestHeader().setHeader("Accept", "/?author=2")
-	as.sendAndReceive(msg2, false, true);
+	as.sendAndReceive(msg4, false, true);
 	var re = user2
 	var body = msg4.getResponseBody().toString()
 
